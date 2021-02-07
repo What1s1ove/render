@@ -181,6 +181,146 @@
     </style>
   </section>
 
+  <section class="slide" id="ssr">
+    <h2>SSR</h2>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="ssr">
+    <h2>SSR <small>(Server Side Rendering)</small></h2>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="ssr">
+    <h2>SSR <small>(Server Side Rendering)</small></h2>
+    <img class="ssr-example" src="pictures/ssr-1.png" srcset="pictures/ssr-1.png 2x" alt="SSR">
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="ssr">
+    <h2>SSR <small>(Server Side Rendering)</small></h2>
+    <img class="ssr-example" src="pictures/ssr-2.png" srcset="pictures/ssr-2.png 2x"  alt="SSR">
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="ssr">
+    <h2>SSR <small>(Server Side Rendering)</small></h2>
+    <img class="ssr-example" src="pictures/ssr-3.png" srcset="pictures/ssr-3.png 2x"  alt="SSR">
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="ssr">
+    <h2>SSR <small>(Server Side Rendering)</small></h2>
+    <img class="ssr-example" src="pictures/ssr-4.png" srcset="pictures/ssr-4.png 2x"  alt="SSR">
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="ssr">
+    <h2>SSR <small>(Server Side Rendering)</small></h2>
+    <img class="ssr-example" src="pictures/ssr-5.png" srcset="pictures/ssr-5.png 2x"  alt="SSR">
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="ssr">
+    <h2>SSR <small>(Server Side Rendering)</small></h2>
+    <img class="ssr-example" src="pictures/ssr-6.png" srcset="pictures/ssr-6.png 2x"  alt="SSR">
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="ssr">
+    <h2>SSR <small>(Server Side Rendering)</small></h2>
+    <img class="ssr-example" src="pictures/ssr-7.png" srcset="pictures/ssr-7.png 2x"  alt="SSR">
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="ssr">
+    <h2>SSR <small>(Server Side Rendering)</small></h2>
+    <p>Page Request 👨‍💻</p>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="ssr">
+    <h2>SSR <small>(Server Side Rendering)</small></h2>
+    <p>Page Request 👨‍💻 -> NextJS ⚛️</p>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="ssr">
+    <h2>SSR <small>(Server Side Rendering)</small></h2>
+    <p>Page Request 👨‍💻 -> NextJS ⚛️ -> Fetches Data 🗂</p>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="ssr">
+    <h2>SSR <small>(Server Side Rendering)</small></h2>
+    <p>Page Request 👨‍💻 -> NextJS ⚛️ -> Fetches Data 🗂 -> HTML 📃</p>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="ssr">
+    <pre class="example">
+      <code>📒next-project/pages/articles/index.js</code>
+      <code> </code>
+      <code>const DashboardPage = ({ articles }) => (</code>
+      <code>  &lt;ul&gt;</code>
+      <code>      {articles.map((it) => &lt;li&gt;{it.title}&lt;/li&gt;)}</code>
+      <code>  &lt;/ul&gt;</code>
+      <code>);</code>
+      <code> </code>
+      <code class="mark">const getServerSideProps = async () => {</code>
+      <code class="mark">  const articles = await api.getArticles();</code>
+      <code class="mark"> </code>
+      <code class="mark">  return {</code>
+      <code class="mark">    props: { articles }</code>
+      <code class="mark">  };</code>
+      <code class="mark">};</code>
+      <code class="mark"> </code>
+      <code class="mark">export { getServerSideProps };</code>
+      <code>export default DashboardPage;</code>
+    </pre>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+    <style>
+      #ssr .example {
+        font-size: 13px;
+      }
+
+      #ssr .ssr-example {
+        display: block;
+        max-width: 100%;
+        max-height: 400px;
+        margin: 0 auto;
+      }
+    </style>
+  </section>
+
   <footer class="badge">
     <a href="https://github.com/shower/shower">Fork me on GitHub</a>
   </footer>
