@@ -321,6 +321,75 @@
     </style>
   </section>
 
+  <section class="slide" id="ssg">
+    <h2>SSG</h2>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="ssg">
+    <h2>SSG <small>(Static Site Generation)</small></h2>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="ssg">
+    <h2>SSG <small>(Static Site Generation)</small></h2>
+    <p>npm run build ⚛️</p>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="ssg">
+    <h2>SSG <small>(Static Site Generation)</small></h2>
+    <p>npm run build ⚛️ -> Fetches Data 🗂</p>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="ssg">
+    <h2>SSG <small>(Static Site Generation)</small></h2>
+    <p>npm run build ⚛️ -> Fetches Data 🗂 -> HTML 📃</p>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="ssg">
+    <pre class="example">
+      <code>📒next-project/pages/articles/index.js</code>
+      <code> </code>
+      <code>const DashboardPage = ({ articles }) => (</code>
+      <code>  &lt;ul&gt;</code>
+      <code>      {articles.map((it) => &lt;li&gt;{it.title}&lt;/li&gt;)}</code>
+      <code>  &lt;/ul&gt;</code>
+      <code>);</code>
+      <code> </code>
+      <code class="mark">const getStaticProps = async () => {</code>
+      <code class="mark">  const articles = await api.getArticles();</code>
+      <code class="mark"> </code>
+      <code class="mark">  return {</code>
+      <code class="mark">    props: { articles }</code>
+      <code class="mark">  };</code>
+      <code class="mark">};</code>
+      <code class="mark"> </code>
+      <code class="mark">export { getServerSideProps };</code>
+      <code>export default DashboardPage;</code>
+    </pre>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+    <style>
+      #ssg .example {
+        font-size: 13px;
+      }
+    </style>
+  </section>
+
   <footer class="badge">
     <a href="https://github.com/shower/shower">Fork me on GitHub</a>
   </footer>
