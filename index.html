@@ -740,6 +740,72 @@
     </style>
   </section>
 
+  <section class="slide" id="features">
+    <h2>React</h2>
+  </section>
+
+  <section class="slide" id="react-features">
+    <h2>React Server Components</h2>
+  </section>
+
+  <section class="slide" id="react-features">
+    <h2>React Server Components</h2>
+    <pre class="example">
+      <code>📒src/components/server/article-list.<mark class="important">server</mark>.jsx</code>
+      <code> </code>
+      <code>const ArticleList = () => {</code>
+      <code>  const articles = <mark class="important">db.query('SELECT * FROM articles').rows;</mark></code>
+      <code> </code>
+      <code>  return (</code>
+      <code>            &lt;ul&gt;</code>
+      <code>                {articles.map((it) => &lt;li&gt;{it.title}&lt;/li&gt;)}</code>
+      <code>            &lt;/ul&gt;</code>
+      <code>  );</code>
+      <code>};</code>
+    </pre>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="react-features">
+    <h2>React Server Components</h2>
+    <pre class="example">
+      <code>📒src/components/server/article-list.<mark class="important">server</mark>.jsx</code>
+      <code> </code>
+      <code>const ArticleList = () => {</code>
+      <code>  const articles = <mark class="important">db.query('SELECT * FROM articles').rows;</mark></code>
+      <code> </code>
+      <code>  return (</code>
+      <code>            &lt;ul&gt;</code>
+      <code>                {articles.map((it) => &lt;li&gt;{it.title}&lt;/li&gt;)}</code>
+      <code>            &lt;/ul&gt;</code>
+      <code>  );</code>
+      <code>};</code>
+    </pre>
+    <a class="more" href="https://reactjs.org/blog/2020/12/21/data-fetching-with-react-server-components.html" target="_blank" rel="noreferrer">React Server Components</a>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+
+    <style>
+      #react-features {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #react-features .example {
+        font-size: 13px;
+      }
+
+      #react-features .more {
+        align-self: center;
+        margin: auto 0 25px;
+        font-size: 14px;
+      }
+    </style>
+  </section>
+
   <section class="slide" id="magic">
     <h2>🔮</h2>
     <span class="copyright bottom right">
