@@ -19,11 +19,11 @@
 <body class="shower list">
 
     <header class="caption">
-      <h1>Render</h1>
+      <h1>Modern Render — MR</h1>
     </header>
 
     <section class="slide" id="cover">
-      <h2>Render</h2>
+      <h2>Modern Render </h2>
       <pre class="cover__example">
         <code> </code>
         <code>render(res) {</code>
@@ -50,10 +50,79 @@
 
   <section class="slide" id="program">
     <h2>Program for today...</h2>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="program">
+    <h2>Program for today...</h2>
+    <ul>
+      <li>Regular SSR</li>
+    </ul>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="program">
+    <h2>Program for today...</h2>
+    <ul>
+      <li>Regular SSR</li>
+      <li>SPA</li>
+    </ul>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="program">
+    <h2>Program for today...</h2>
     <ul>
       <li>Regular SSR</li>
       <li>SPA</li>
       <li>SSR, SSG, CSR</li>
+    </ul>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="program">
+    <h2>Program for today...</h2>
+    <ul>
+      <li>Regular SSR</li>
+      <li>SPA</li>
+      <li>SSR, SSG, CSR</li>
+      <li>Frameworks Future Features</li>
+    </ul>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="program">
+    <h2>Program for today...</h2>
+    <ul>
+      <li>Regular SSR</li>
+      <li>SPA</li>
+      <li>SSR, SSG, CSR</li>
+      <li>Frameworks Future Features</li>
+      <li>11ty</li>
+    </ul>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="program">
+    <h2>Program for today...</h2>
+    <ul>
+      <li>Regular SSR</li>
+      <li>SPA</li>
+      <li>SSR, SSG, CSR</li>
+      <li>Frameworks Future Features</li>
+      <li>11ty</li>
       <li>🔮</li>
     </ul>
     <span class="copyright bottom right">
@@ -386,6 +455,181 @@
     <style>
       #ssg .example {
         font-size: 13px;
+      }
+    </style>
+  </section>
+
+  <section class="slide" id="csr">
+    <h2>CSR</h2>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="csr">
+    <h2>CSR <small>(Client Side Rendering)</small></h2>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="csr">
+    <h2>CSR <small>(Client Side Rendering)</small></h2>
+    <p class="path">npm run build ⚛️</p>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="csr">
+    <h2>CSR <small>(Client Side Rendering)</small></h2>
+    <p class="path">npm run build ⚛️ -> HTML 📃</p>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="csr">
+    <h2>CSR <small>(Client Side Rendering)</small></h2>
+    <p class="path">npm run build ⚛️ -> HTML 📃 -> Page Request 👨‍💻</p>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="csr">
+    <h2>CSR <small>(Client Side Rendering)</small></h2>
+    <p class="path">npm run build ⚛️ -> HTML 📃 -> Page Request 👨‍💻 -> Fetches Data 🗂</p>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="csr">
+    <h2>CSR <small>(Client Side Rendering)</small></h2>
+    <p class="path">npm run build ⚛️ -> HTML 📃 -> Page Request 👨‍💻 -> Fetches Data 🗂 -> Rerender ⚙️</p>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="csr">
+    <pre class="example">
+      <code>📒next-project/pages/articles/index.js</code>
+      <code> </code>
+      <code>import useSWR from 'swr';</code>
+      <code> </code>
+      <code>const DashboardPage = ({ articles }) => {</code>
+      </code> const { data } = useSWR(Api);</code>
+      <code> </code>
+      <code>  return (</code>
+      <code>    &lt;ul&gt;</code>
+      <code>        {articles.map((it) => &lt;li&gt;{it.title}&lt;/li&gt;)}</code>
+      <code>    &lt;/ul&gt;</code>
+      <code>  );</code>
+      <code>};</code>
+      <code> </code>
+      <code>export default DashboardPage;</code>
+    </pre>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+    <style>
+      #csr .path {
+        font-size: 23px;
+      }
+
+      #csr .example {
+        font-size: 13px;
+      }
+    </style>
+  </section>
+
+  <section class="slide" id="magic">
+    <h2>🔮</h2>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="people">
+    <h2>🔮</h2>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="people">
+    <h2>🔮</h2>
+    <p class="intro"><b>*-first</b></p>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="people">
+    <h2>🔮</h2>
+    <h3 class="sub-title">Web is <mark class="important">always</mark></h3>
+    <p class="intro"><b>people-first</b></p>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+
+    <style>
+      #people h2 {
+        text-align: center;
+      }
+
+      #people .sub-title {
+        text-align: center;
+      }
+
+      #people .intro {
+        position: absolute;
+        top: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 70px;
+      }
+    </style>
+  </section>
+
+  <section class="slide" id="ps">
+    <h2>ps.</h2>
+    <p>My name is Vladyslav Zubko (<a href="https://whatislove.dev" target="_blank" rel="noreferrer">https://whatislove.dev</a>)</p>
+    <p>Presentation runs on Sower (<a href="https://shwr.me" target="_blank" rel="noreferrer">https://shwr.me</a>)</p>
+    <p>Slides are here (<a href="https://what1s1ove.github.io/render" target="_blank" rel="noreferrer">https://what1s1ove.github.io/render</a>)</p>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="map">
+    <img class="where" src="pictures/map.png" srcset="pictures/map.png 2x" alt="Kyiv Office Map">
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+
+    <style>
+      #map .where {
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </section>
+
+  <section class="slide" id="thanks">
+    <h2>Thanks &lt;3</h2>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+
+    <style>
+      #thanks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     </style>
   </section>
