@@ -491,6 +491,21 @@
     <span class="copyright bottom right">
       <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
     </span>
+  </section>
+
+  <section class="slide" id="ssr">
+    <h2>When</h2>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="ssr">
+    <h2>When 🍏</h2>
+    <p>Really <mark>dynamic</mark> content that needs to be <mark>fresh</mark> on <mark>every request</mark></p>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
     <style>
       #ssr .example {
         font-size: 13px;
@@ -574,6 +589,30 @@
     </style>
   </section>
 
+  <section class="slide" id="ssg">
+    <h2>When</h2>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="ssg">
+    <h2>When 🗂</h2>
+    <p class="ssg__when-desc">For pages that can only be <mark>generated after fetching</mark> external data at <mark>build time</mark></p>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+    <style>
+      #ssg .example {
+        font-size: 13px;
+      }
+
+      #ssg .ssg__when-desc {
+        font-size: 23px;
+      }
+    </style>
+  </section>
+
   <section class="slide" id="csr">
     <h2>CSR</h2>
     <span class="copyright bottom right">
@@ -634,8 +673,8 @@
       <code> </code>
       <code>import useSWR from 'swr';</code>
       <code> </code>
-      <code>const DashboardPage = ({ articles }) => {</code>
-      <code> const { data } = useSWR(Api);</code>
+      <code>const DashboardPage = () => {</code>
+      <code> const { data: articles } = useSWR(Api.articles);</code>
       <code> </code>
       <code>  return (</code>
       <code>    &lt;ul&gt;</code>
@@ -646,6 +685,30 @@
       <code> </code>
       <code>export default DashboardPage;</code>
     </pre>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+    <style>
+      #csr .path {
+        font-size: 23px;
+      }
+
+      #csr .example {
+        font-size: 13px;
+      }
+    </style>
+  </section>
+
+  <section class="slide" id="csr">
+    <h2>When</h2>
+    <span class="copyright bottom right">
+      <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
+    </span>
+  </section>
+
+  <section class="slide" id="csr">
+    <h2>When 👨‍💻</h2>
+    <p class="ssg__when-desc">Prerender <mark>without data</mark> and then <mark>load data</mark> on <mark>client-side</mark></p>
     <span class="copyright bottom right">
       <img src="pictures/binary-studio-logo.svg" width="75" alt="Binary Studio logo">
     </span>
